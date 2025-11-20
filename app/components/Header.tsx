@@ -1,5 +1,5 @@
 export default function Header() {
     return (
-        <h1>👩🏻‍💻 My Portfolio — Sara Anicic</h1>
+        <div className="text-gray-500 dark:text-white">👩🏻‍💻 My Portfolio — Sara Anicic</div>
     );
 }

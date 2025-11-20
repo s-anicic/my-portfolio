@@ -8,7 +8,11 @@ export default function ThemeToggle() {
 
   // Initialize theme on mount
   useEffect(() => {
-    const dark = localStorage.getItem("theme") === "dark";
+    const dark =
+      localStorage.getItem("theme") === "dark" ||
+      (!localStorage.getItem("theme") &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches);
+
     setIsDark(dark);
     document.documentElement.classList.toggle("dark", dark);
   }, []);
@@ -23,7 +27,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="px-4 py-2 rounded-full font-medium text-gray-500 dark:text-gray-300 hover:bg-[oklch(97%_0_0)] transition-all duration-300"
+      className="px-4 py-2 rounded-full font-medium text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full"
       aria-label="Toggle theme"
     >
       {isDark ? <Sun size={20} /> : <Moon size={20} />}
