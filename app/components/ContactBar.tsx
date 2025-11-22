@@ -4,7 +4,7 @@ const ContactBar = () => {
   return (
     <aside className="hidden md:flex flex-col w-[15vw] min-w-[80px] h-screen fixed top-0 right-0 p-6">
       
-      <div className="flex flex-col items-center overflow-auto h-full space-y-6">
+      <div className="flex flex-col items-center h-full space-y-6 overflow-auto">
         {/* Theme toggle at top */}
         <div className="flex justify-end w-full">
           <ThemeToggle />
@@ -13,7 +13,7 @@ const ContactBar = () => {
         <img
           src="/images/portrait.jpg"
           alt="Sara Anicic"
-          className="w-24 h-24 md:w-30 md:h-30 rounded-full object-cover"
+          className="object-cover w-24 h-24 rounded-full md:w-30 md:h-30"
         />
 
         <h2 className="text-lg font-bold text-[var(--color-foreground)] text-center">
