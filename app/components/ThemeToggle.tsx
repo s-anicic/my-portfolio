@@ -26,7 +26,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="px-4 py-2 rounded-full font-medium text-[var(--color-foreground)] hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-300"
+      className="px-4 py-2 rounded-full font-medium text-[var(--color-foreground)] transition-colors duration-300"
       aria-label="Toggle theme"
     >
       {isDark ? <Sun size={20} /> : <Moon size={20} />}
