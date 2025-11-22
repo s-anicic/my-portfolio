@@ -1,34 +1,39 @@
-import { 
-  SiNextdotjs, 
-  SiReact, 
-  SiTypescript, 
-  SiTailwindcss, 
-  SiPython, 
-  SiTableau, 
-  SiPostgresql, 
-  SiPowers 
+import React from "react";
+import {
+  SiNextdotjs,
+  SiReact,
+  SiTypescript,
+  SiTailwindcss,
+  SiPython,
+  SiTableau,
+  SiPostgresql,
 } from "react-icons/si";
 
+type Skill = {
+  name: string;
+  icon: React.ReactNode;
+};
+
 export default function Skills() {
-  const webDev = [
+  const webDev: Skill[] = [
     { name: "NextJS", icon: <SiNextdotjs size={32} /> },
     { name: "React", icon: <SiReact size={32} /> },
     { name: "TypeScript", icon: <SiTypescript size={32} /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss size={32} /> },
   ];
 
-  const dataAnalytics = [
+  const dataAnalytics: Skill[] = [
     { name: "SQL", icon: <SiPostgresql size={32} /> },
     { name: "Python", icon: <SiPython size={32} /> },
     { name: "Tableau", icon: <SiTableau size={32} /> },
-    { name: "PowerBI", icon: <SiPowers size={32} /> },
+    { name: "Power BI", icon: <SiPython size={32} /> }, 
   ];
 
-  const softwareEng = [
+  const softwareEng: Skill[] = [
     { name: "Python", icon: <SiPython size={32} /> },
   ];
 
-  const renderSkills = (skills: { name: string; icon: JSX.Element }[]) => (
+  const renderSkills = (skills: Skill[]) => (
     <div className="grid grid-cols-3 sm:grid-cols-4 gap-6">
       {skills.map((skill) => (
         <div
@@ -53,7 +58,7 @@ export default function Skills() {
       <div className="space-y-6">
         <div>
           <h3 className="text-xl font-semibold mb-2 text-[var(--color-foreground)]">
-           Web Development
+            Web Development
           </h3>
           {renderSkills(webDev)}
         </div>
@@ -67,7 +72,7 @@ export default function Skills() {
 
         <div>
           <h3 className="text-xl font-semibold mb-2 text-[var(--color-foreground)]">
-           Software Engineering
+            Software Engineering
           </h3>
           {renderSkills(softwareEng)}
         </div>
