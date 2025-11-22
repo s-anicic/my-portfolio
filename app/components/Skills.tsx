@@ -9,6 +9,9 @@ import {
   SiPostgresql,
 } from "react-icons/si";
 
+import { IoBarChart } from "react-icons/io5";
+
+
 type Skill = {
   name: string;
   icon: React.ReactNode;
@@ -26,7 +29,7 @@ export default function Skills() {
     { name: "SQL", icon: <SiPostgresql size={32} /> },
     { name: "Python", icon: <SiPython size={32} /> },
     { name: "Tableau", icon: <SiTableau size={32} /> },
-    { name: "Power BI", icon: <SiPython size={32} /> }, 
+    { name: "Power BI", icon: <IoBarChart size={32} /> }, 
   ];
 
   const softwareEng: Skill[] = [
