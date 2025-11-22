@@ -4,7 +4,7 @@ import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   return (
-    <div className="flex items-center justify-between p-4 pl-20 dark:text-white font-medium">
+    <div className="flex items-center justify-between p-4 pl-20 font-medium">
       {/* Left side */}
       <Header />
 
@@ -12,13 +12,13 @@ export default function Navbar() {
       <div className="flex items-center gap-4">
         <Link
           href="/"
-          className="px-4 py-2 rounded-full font-medium text-gray-500 text-gray-300 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+          className="px-4 py-2 rounded-full font-medium hover:bg-gray-100 dark:hover:bg-gray-700 text-[var(--color-foreground)]"
         >
           Home
         </Link>
         <Link
           href="/about"
-          className="px-4 py-2 rounded-full font-medium text-gray-500 text-gray-300 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+          className="px-4 py-2 rounded-full font-medium hover:bg-gray-100 dark:hover:bg-gray-700 text-[var(--color-foreground)]"
         >
           About
         </Link>
