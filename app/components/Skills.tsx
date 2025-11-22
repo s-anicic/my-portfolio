@@ -41,7 +41,7 @@ export default function Skills() {
       {skills.map((skill) => (
         <div
           key={skill.name}
-          className="flex flex-col items-center justify-center p-4 transition-transform duration-200 transform shadow-lg rounded-xl dark:bg-zinc-900 hover:scale-105"
+          className="flex flex-col items-center justify-center p-4 transition-transform duration-200 transform bg-white shadow-lg rounded-xl dark:bg-zinc-900 hover:scale-105"
         >
           {skill.icon}
           <p className="mt-2 text-sm font-medium text-[var(--color-foreground)]">
