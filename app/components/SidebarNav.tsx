@@ -7,7 +7,7 @@ const projects = [
 ];
 
 const SidebarNav = () => (
-  <aside className="overflow-auto hidden md:flex flex-col w-[15vw] min-w-[80px] h-screen fixed top-0 left-0 p-6 space-y-6 bg-white/10 dark:bg-transparent backdrop-blur-md">
+  <aside className="overflow-auto hidden md:flex flex-col w-[15vw] min-w-[80px] h-screen fixed top-0 left-0 p-6 space-y-6">
     <h2 className="text-lg font-bold text-[var(--color-foreground)]">🛠️ Projects</h2>
 
     <div>

@@ -16,11 +16,11 @@ const ThemeContext = createContext<ThemeContextType>({
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState<Theme>("light");
 
-  // Initialize theme on mount
   useEffect(() => {
     const stored = localStorage.getItem("theme") as Theme | null;
-    const darkPrefers = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initialTheme: Theme = stored || (darkPrefers ? "dark" : "light");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const initialTheme: Theme = stored || (prefersDark ? "dark" : "light");
+
     setTheme(initialTheme);
     document.documentElement.classList.toggle("dark", initialTheme === "dark");
   }, []);
@@ -39,5 +39,4 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-// Hook to use in components
 export const useTheme = () => useContext(ThemeContext);
