@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
       <SidebarNav />
       <ContactBar />
-      <main className="ml-[5vw] mr-[5vw] pt-6">
+      <main className="pt-6">
         <ProfessionalSummary />
         <Skills />
       </main>
