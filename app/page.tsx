@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
       <SidebarNav />
       <ContactBar />
-      <main className="pt-6">
+      <main className="pt-2">
         <ProfessionalSummary />
         <Skills />
       </main>

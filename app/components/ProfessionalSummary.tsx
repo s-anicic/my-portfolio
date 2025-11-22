@@ -1,6 +1,6 @@
 export default function ProfessionalSummary() {
   return (
-    <section className="max-w-5xl p-6 mx-auto space-y-6">
+    <section className="max-w-5xl p-5 mx-auto space-y-6">
       <h2 className="text-3xl font-bold text-[var(--color-foreground)] inline-block">
         Professional Summary
       </h2>

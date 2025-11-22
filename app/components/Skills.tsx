@@ -30,19 +30,25 @@ export default function Skills() {
     { name: "Power BI", icon: <IoBarChart size={32} /> },
   ];
 
+  // Add 3 invisible placeholders after Python
   const softwareEng: Skill[] = [
     { name: "Python", icon: <SiPython size={32} /> },
+    { name: "", icon: <div /> },
+    { name: "", icon: <div /> },
+    { name: "", icon: <div /> },
   ];
 
   const renderSkills = (skills: Skill[]) => (
-    <div className="grid gap-6 grid-cols-[repeat(auto-fit,minmax(140px,1fr))]">
-      {skills.map((skill) => (
+    <div className="grid gap-6 grid-cols-[repeat(auto-fit,minmax(120px,1fr))]">
+      {skills.map((skill, index) => (
         <div
-          key={skill.name}
-          className="flex flex-col items-center justify-center p-4 transition-transform duration-200 transform bg-white shadow-lg rounded-xl dark:bg-zinc-900 hover:scale-105"
+          key={skill.name + index}
+          className={`flex flex-col items-center justify-center h-25 p-4 transition-transform duration-200 transform bg-white shadow-lg rounded-xl dark:bg-zinc-900 hover:scale-105 ${
+            skill.name === "" ? "opacity-0 pointer-events-none" : ""
+          }`}
         >
           {skill.icon}
-          <p className="mt-2 text-sm font-medium text-[var(--color-foreground)]">
+          <p className="mt-2 text-sm font-medium text-[var(--color-foreground)] text-center">
             {skill.name}
           </p>
         </div>
@@ -51,7 +57,7 @@ export default function Skills() {
   );
 
   return (
-    <section className="max-w-5xl p-6 mx-auto space-y-6">
+    <section className="max-w-5xl p-5 mx-auto space-y-6">
       <h2 className="text-3xl font-bold text-[var(--color-foreground)] inline-block">
         Skills
       </h2>
