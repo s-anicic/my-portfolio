@@ -7,11 +7,11 @@ It features a **Sidebar Navigation**, a **Contact Bar**, a **Professional Summar
 
 ## ✨ Features
 
-- 🖥️ **Sidebar Navigation** – Left-side panel with external links to projects, opening in new tabs
-- 👩🏻‍💻 **Contact Bar** – Right-side panel displaying a professional portrait and contact info
-- 📄 **Professional Summary** – Central section highlighting skills and experience
-- 🌙 **Light/Dark Mode Toggle** – Easily switch between light and dark themes
-- 🎨 **Modern UI** – Clean layout with Tailwind CSS and custom Google Fonts for a polished, professional look
+- 🖥️ **Sidebar Navigation** - Left-side panel with external links to projects, opening in new tabs
+- 👩🏻‍💻 **Contact Bar** - Right-side panel displaying a professional portrait and contact info
+- 📄 **Professional Summary** - Central section highlighting skills and experience
+- 🌙 **Light/Dark Mode Toggle** - Easily switch between light and dark themes
+- 🎨 **Modern UI** - Clean layout with Tailwind CSS and custom Google Fonts for a polished, professional look
 
 ---
 
@@ -29,13 +29,13 @@ It features a **Sidebar Navigation**, a **Contact Bar**, a **Professional Summar
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/s-anicic/personal-web-application
+git clone https://github.com/s-anicic/my-portfolio
 ```
 
 ### 2. Navigate into the project
 
 ```bash
-cd personal-web-application
+cd my-portfolio
 ```
 
 ### 3. Install dependencies
