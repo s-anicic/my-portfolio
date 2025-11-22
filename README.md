@@ -7,9 +7,9 @@ It features a **Sidebar Navigation**, a **Contact Bar**, a **Professional Summar
 
 ## 📸 Preview
 
-<img src="https://github.com/user-attachments/assets/4eed922a-ea12-46de-a16a-65cb949baae2" alt="My Portfolio - Light Mode"/> </br>
+<img src="https://github.com/user-attachments/assets/33d4ed04-0ad5-493e-9c7e-d437468dbe70" alt="My Portfolio - Light Mode"/> </br>
 
-<img src="https://github.com/user-attachments/assets/f2549ff5-0cbc-4c53-97ef-209c1ed0f562" alt="My Portfolio - Dark Mode"/>
+<img src="https://github.com/user-attachments/assets/b906360a-248c-49b8-9954-f4b5b409dd89" alt="My Portfolio - Dark Mode"/>
 
 ---
 
@@ -59,6 +59,16 @@ npm run dev
 ```
 
 Then open **[http://localhost:3000](http://localhost:3000)** in your browser to view the app.
+
+---
+
+## ☁️ Deployment
+
+This portfolio is deployed on **Vercel** and can be viewed live:
+
+**Live Site:** [https://sara-anicic.vercel.app](https://sara-anicic.vercel.app)
+
+> The project automatically updates on Vercel whenever changes are pushed to the GitHub repository.
 
 ---
 
