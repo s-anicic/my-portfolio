@@ -8,9 +8,7 @@ import {
   SiTableau,
   SiPostgresql,
 } from "react-icons/si";
-
 import { IoBarChart } from "react-icons/io5";
-
 
 type Skill = {
   name: string;
@@ -29,7 +27,7 @@ export default function Skills() {
     { name: "SQL", icon: <SiPostgresql size={32} /> },
     { name: "Python", icon: <SiPython size={32} /> },
     { name: "Tableau", icon: <SiTableau size={32} /> },
-    { name: "Power BI", icon: <IoBarChart size={32} /> }, 
+    { name: "Power BI", icon: <IoBarChart size={32} /> },
   ];
 
   const softwareEng: Skill[] = [
@@ -37,7 +35,7 @@ export default function Skills() {
   ];
 
   const renderSkills = (skills: Skill[]) => (
-    <div className="grid grid-cols-3 gap-6 sm:grid-cols-4">
+    <div className="grid gap-6 grid-cols-[repeat(auto-fit,minmax(140px,1fr))]">
       {skills.map((skill) => (
         <div
           key={skill.name}
