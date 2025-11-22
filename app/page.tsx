@@ -7,11 +7,13 @@ import Skills from "./components/Skills"
 export default function Home() {
   return (
     <>
-  <Navbar />
-  <SidebarNav />
-  <ContactBar />
-  <ProfessionalSummary />
-  <Skills />
-  </>
+      <Navbar />
+      <SidebarNav />
+      <ContactBar />
+      <main className="ml-[15vw] mr-[15vw] pt-6">
+        <ProfessionalSummary />
+        <Skills />
+      </main>
+    </>
   );
 }
