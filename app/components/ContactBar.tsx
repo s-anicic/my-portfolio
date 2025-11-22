@@ -2,7 +2,7 @@ import ThemeToggle from "./ThemeToggle";
 
 const ContactBar = () => {
   return (
-    <aside className="hidden md:flex flex-col w-[15vw] min-w-[80px] h-screen fixed top-0 right-0 p-6">
+    <aside className="hidden md:flex flex-col w-[17vw] min-w-[80px] h-screen fixed top-0 right-0 p-6">
       
       <div className="flex flex-col items-center h-full space-y-6 overflow-auto">
         {/* Theme toggle at top */}
