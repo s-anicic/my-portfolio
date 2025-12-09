@@ -7,9 +7,9 @@ It features a **Sidebar Navigation**, a **Contact Bar**, a **Professional Summar
 
 ## 📸 Preview
 
-<img src="https://github.com/user-attachments/assets/33d4ed04-0ad5-493e-9c7e-d437468dbe70" alt="My Portfolio - Light Mode"/> </br>
+<img src="https://github.com/user-attachments/assets/3cc2f68c-4c2f-44e2-bc91-cdd9e6cb7165" alt="My Portfolio - Light Mode"/> </br>
 
-<img src="https://github.com/user-attachments/assets/b906360a-248c-49b8-9954-f4b5b409dd89" alt="My Portfolio - Dark Mode"/>
+<img src="https://github.com/user-attachments/assets/4e4007e7-828e-4f55-9e5e-dcf9fff185a9" alt="My Portfolio - Dark Mode"/>
 
 ---
 
