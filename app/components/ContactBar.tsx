@@ -10,11 +10,11 @@ const ContactBar = () => {
           <ThemeToggle />
         </div>
 
-        <img
-          src="/images/portrait.jpg"
-          alt="Sara Anicic"
-          className="object-cover w-24 h-24 rounded-full md:w-30 md:h-30"
-        />
+<img
+  src="/images/portrait.jpg"
+  alt="Sara Anicic"
+  className="object-cover w-40 h-40 rounded-full"
+/>
 
         <h2 className="text-lg font-bold text-[var(--color-foreground)] text-center">
           ✉️ Contact
